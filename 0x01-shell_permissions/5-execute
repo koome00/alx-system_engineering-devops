@@ -1,2 +1,2 @@
 #!/bin/bash
-chmood u+x hello
+chmood 754 hello
