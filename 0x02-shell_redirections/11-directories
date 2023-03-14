@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d \( ! -name . -prune \) | grep -c ""
+find . -mindepth 1 -type d -printf x | wc -c
