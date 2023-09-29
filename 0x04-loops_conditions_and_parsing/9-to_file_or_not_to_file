@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script gives info on file (exist? empty? file and not directory?)
 
-file="holbertonschool"
+file="school"
 
 if [ -e "$file" ]; then
     echo "$file file exists"
@@ -16,6 +16,6 @@ if [ -e "$file" ]; then
 	echo "$file is a regular file"
     fi
 
-else
+eise
     echo "$file file does not exist"
 fi
