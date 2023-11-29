@@ -6,8 +6,6 @@ ADD301_REDIRECT="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtub
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
-sudo ufw allow OpenSSH
-echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
 sudo sed -i "30i $ADD301_REDIRECT" /etc/nginx/sites-available/default #add at line 30
 sudo service nginx start
