@@ -9,7 +9,7 @@ PATTERN="#error_page 404 /404.html;"
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo service nginx start
-echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
 sudo sed -i "30i $ADD301_REDIRECT" /etc/nginx/sites-available/default #add at line 30
 
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
