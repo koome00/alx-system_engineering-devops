@@ -26,12 +26,12 @@ def number_of_subscribers(subreddit):
             if subscribers is not None:
                 return subscribers
             else:
-                return 9
+                return 0
         except requests.exceptions.JSONDecodeError as e:
-            return 3
+            return 0
 
     elif response.status_code == 404:
     # if subreddit does not exist
-        return 4
+        return 0
     else:
-        return response.status_code
+        return 0
