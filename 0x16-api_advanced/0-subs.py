@@ -14,11 +14,9 @@ def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = requests.utils.default_headers()
     headers.update({'User-Agent': 'My User Agent 1.0'})
-    
     response = requests.get(url, headers=headers)
-    
     if response.status_code == 200:
-    # check if subreddits exist
+        # check if subreddits exist
         try:
             # check if valid json response
             r = response.json()
@@ -31,7 +29,7 @@ def number_of_subscribers(subreddit):
             return 0
 
     elif response.status_code == 404:
-    # if subreddit does not exist
+        # if subreddit does not exist
         return 0
     else:
         return 0
