@@ -1,7 +1,6 @@
-
 # 0x19. Postmortem
 
-# 0. My first postmortem
+## 0. My first postmortem
 mandatory
 
 
@@ -34,3 +33,14 @@ Be brief and straight to the point, between 400 to 600 words
 While postmortem format can vary, stick to this one so that you can get properly reviewed by your peers.
 
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+
+link -- `https://medium.com/@koomemc/postmortem-apache-container-outage-69515bdc49e9`
+
+## 1. Make people want to read your postmortem
+We are constantly stormed by a quantity of information, it’s tough to get people to read you.
+
+Make your post-mortem attractive by adding humour, a pretty diagram or anything that would catch your audience attention.
+
+Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+
+link - `https://medium.com/@koomemc/postmortem-apache-container-outage-69515bdc49e9`
